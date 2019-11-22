@@ -1,6 +1,6 @@
 ## Plantinator
 
-1.Run pip3 install -r requirements.txt
+1. Run pip3 install -r requirements.txt
 
 2. Copy cnn_models.pkl and tranformation.pkl into ml_files
 
