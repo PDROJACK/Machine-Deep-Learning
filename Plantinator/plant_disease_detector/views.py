@@ -20,8 +20,19 @@ def __index__function(request):
     }
     return HttpResponse(json.dumps(return_data), content_type='application/json; charset=utf-8')
 
+@api_view(['POST']) 
+def test(request): 
+    return_data = {
+        "error" : "0",
+        "message" : "Successful"
+    }
+    print("Call happening")
+    return HttpResponse(json.dumps(return_data), content_type='application/json; charset=utf-8')
+
+
 @api_view(['POST','GET'])
 def predict_plant_disease(request):
+    print('Runing predict_plant_disease')
     try:
         if request.method == "GET" :
             return_data = {
